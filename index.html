@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Assignment 5: JavaScript Basics</h1>
+    <p>Student: Tolbasy Aliakbar | Group: IT-2501</p>
+
+    <h2>Part 1: Profile Information</h2>
+    <p>Name: <span id="profileName"></span></p>
+    <p>Birth year: <span id="profileYear"></span></p>
+    <p>Is developer: <span id="profileDeveloper"></span></p>
+    <p>Age: <span id="profileAge"></span></p>
+    <p>Age in months (approximate): <span id="profileMonths"></span></p>
+    <p>Number of hobbies: <span id="hobbyCount"></span></p>
+
+    <h2>Part 2: Update Profile</h2>
+    <form id="profileForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <br><br>
+        <label for="birthYear">Birth Year:</label>
+        <input type="number" id="birthYear" min="1900" required>
+        <br><br>
+        <button type="submit">Create / Update Profile</button>
+    </form>
+    <p id="message"></p>
+
+    <h2>Part 3: My Hobbies</h2>
+    <ul id="hobbyList"></ul>
+    <label for="newHobby">New hobby:</label>
+    <input type="text" id="newHobby" placeholder="Enter a hobby">
+    <button type="button" id="addButton">Add Item</button>
+    <button type="button" id="removeButton">Remove Item</button>
+</body>
+</html>
